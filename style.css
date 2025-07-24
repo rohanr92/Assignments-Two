@@ -1,0 +1,969 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font Config Part */
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Root Config Part */
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #E95A08;
+    --font-color-paragraph: rgba(0, 0, 0, 0.5);
+    --button-bg: #E95A08;
+    --card-primary-title: #111111;
+    --nav-primary-color: #8987A1;
+    --font-family-primary: "Inter", sans-serif;
+    --font-family-secondary: "Noto Serif", serif;
+
+}
+
+/* Shared Style Part */
+
+.display-flex {
+    display: flex;
+}
+
+.title-main {
+    font-family: var(--font-family-secondary);
+    color: var(--primary-color);
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+
+.main-para {
+    font-family: var(--font-family-primary);
+    color: var(--font-color-paragraph);
+    font-size: 1.375rem;
+    font-weight: 400;
+}
+
+.section-title {
+    font-family: var(--font-family-secondary);
+    color: var(--primary-color);
+    font-size: 3.125rem;
+    font-weight: bold;
+}
+
+.card-button {
+    padding: 40px 24px;
+    background-color: var(--button-bg);
+    color: white;
+    font-family: var(--font-family-primary);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+
+/* Main Css FIle Start From Here */
+
+.main-header {
+    max-width: 1440px;
+    margin: 30px auto 100px auto;
+}
+
+.main-header .main-nav-menu img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-header .main-nav-menu {
+    align-items: center;
+    max-width: 1140px;
+    margin: 0px auto;
+    justify-content: space-between;
+}
+
+
+.main-header .main-nav-menu ul {
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    color: var(--nav-primary-color);
+    font-family: var(--font-family-primary);
+    font-weight: 400;
+}
+
+
+.main-header .main-nav-menu ul i {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.main-header .main-nav-menu .nav-bold {
+    font-weight: bold;
+    color: var(--primary-color)
+
+}
+
+/* header responsive */
+
+@media screen and (max-width: 576px) {
+
+    .main-header {
+    margin: 30px auto 28px auto;
+}
+
+.main-header .main-nav-menu {
+        justify-content: space-between;
+        align-items: center;
+        
+        padding: 0px 18px;
+}
+
+.mobile-hide {
+    display: none;
+}
+
+.main-header .main-nav-menu .nav-bold {
+    font-weight: 400;
+}
+
+.main-header .main-nav-menu img {
+    width: 63px;
+    height: 38px;
+}
+
+}
+
+
+/* Hero Banner Starts From Here */
+.hero-banner {
+    max-width: 1440px;
+    margin: 0px auto 120px auto;
+    height: 100%;
+}
+
+.Hero-section-container {
+    max-width: 1140px;
+    height: 461px;
+    margin: 0px auto;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.Hero-section-container .mobile-para {
+    margin-top: 13px;
+}
+
+.Hero-section-container .title-main span {
+    color: var(--secondary-color);
+}
+
+
+
+/* Hero Banner Responsive Code Section */
+
+@media screen and (max-width: 576px) {
+
+    .hero-banner {
+        margin-bottom: 65px;
+    }
+
+    .Hero-section-container {
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 28px;
+    height: 100%;
+}
+
+.Hero-section-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-title {
+    font-family: var(--font-family-secondary);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.mobile-para {
+    font-family: var(--font-family-primary);
+    color: var(--font-color-paragraph);
+    font-size: 0.87rem;
+    font-weight: 400;
+}
+
+.Hero-section-container .left-section {
+    padding: 0px 16px;
+}
+    
+}
+
+
+
+/* Hero Banner Responsive Code Section */
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+
+    .hero-banner {
+        margin-bottom: 65px;
+    }
+
+    .Hero-section-container {
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 28px;
+    height: 100%;
+}
+
+.Hero-section-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-title {
+    font-family: var(--font-family-secondary);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.mobile-para {
+    font-family: var(--font-family-primary);
+    color: var(--font-color-paragraph);
+    font-size: 0.87rem;
+    font-weight: 400;
+}
+
+.Hero-section-container .left-section {
+    padding: 0px 16px;
+}
+    
+}
+
+/* Plants Card Start Form Here */
+
+.plants-card {
+    max-width: 1440px;
+    height: 100%;
+    margin: 0px auto 210px auto;
+}
+
+.plants-card .card-container {
+    max-width: 1140px;
+    margin: 0px auto;
+
+}
+
+.card-main-wrapper {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    
+}
+
+.card-main-wrapper .product-card {
+
+    text-align: center;
+    flex: 0 0 calc(25% - 16px);
+
+}
+
+.card-main-wrapper .product-card .image {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.card-container .card-word {
+    text-align: center;
+    margin-bottom: 49px;
+}
+
+.card-container .card-word .card-para {
+    max-width: 888px; 
+    margin: 0px auto;
+}
+
+.card-main-wrapper .product-card .card-content h3 {
+    font-family: var(--font-family-primary);
+    color: var(--card-primary-title);
+    font-size: 1.375rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+.card-main-wrapper .product-card .card-content p {
+       font-family: var(--font-family-primary);
+    color: var(--card-primary-title);
+    font-size: 1.375rem;
+    font-weight: bold;
+}
+
+.card-main-wrapper .product-card .card-content {
+    margin-bottom: 30px;
+}
+
+.card-main-wrapper .product-card button {
+    padding: 15px 0px;
+    width: 100%;
+    border: 0px;
+    outline: 0px;
+    background-color: var(--button-bg);
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .6s ease;
+}
+
+.card-main-wrapper .product-card button:hover {
+    background-color: rgb(32, 32, 32);
+}
+
+.card-new-para {
+    margin: 16px 0px 0px 0px;
+}
+
+
+.margin-para {
+    margin-top: 16px !important;
+
+}
+
+/* Mobile Responsive Work */
+
+
+
+@media screen and (max-width: 576px) {
+    .card-main-wrapper .product-card {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px !important;
+    flex: 0 0 calc(50% - 16px);
+    
+}
+
+.plants-card {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto 41px auto;
+}
+
+
+.plants-card .card-container {
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+.card-container .card-word .card-para {
+    max-width: 100%; 
+    margin: 0px auto;
+}
+
+.card-main-wrapper .product-card .image img {
+    width: 100%;
+}
+
+
+.card-main-wrapper {
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 15px;
+}
+
+.card-container .card-word {
+    margin-bottom: 28px;
+}
+
+.card-mobile-para {
+    font-family: var(--font-family-primary);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-word {
+    padding: 0px 16px;
+
+}
+
+.card-content h3 {
+     font-family: var(--font-family-primary);
+    color: var(--card-primary-title);
+    font-size: 1rem !important;
+    font-weight: 500;
+}
+
+.card-content p {
+
+    font-family: var(--font-family-primary);
+    color: var(--card-primary-title);
+    font-size: 1rem !important;
+    font-weight: bold !important;
+
+}
+
+.product-card button {
+    font-family: var(--font-family-primary);
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+}
+
+
+
+}
+
+/* Tab Responsive Work */
+
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .card-main-wrapper .product-card {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px !important;
+    flex: 0 0 calc(33.33% - 16px);
+    
+}
+
+.plants-card {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto 210px auto;
+}
+
+
+.plants-card .card-container {
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+.card-container .card-word .card-para {
+    max-width: 100%; 
+    margin: 0px auto;
+}
+
+.card-main-wrapper .product-card .image img {
+    width: 100%;
+}
+
+
+.card-main-wrapper {
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 15px;
+}
+
+.card-container .card-word {
+    margin-bottom: 28px;
+}
+
+.card-mobile-para {
+    font-family: var(--font-family-primary);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-word {
+    padding: 0px 16px;
+
+}
+
+.card-content h3 {
+     font-family: var(--font-family-primary);
+    color: var(--card-primary-title);
+    font-size: 1rem !important;
+    font-weight: 500;
+}
+
+.card-content p {
+
+    font-family: var(--font-family-primary);
+    color: var(--card-primary-title);
+    font-size: 1rem !important;
+    font-weight: bold !important;
+
+}
+
+.product-card button {
+    font-family: var(--font-family-primary);
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+}
+
+
+
+}
+
+
+/* Big Tab Responsive */
+
+
+@media screen and (min-width: 992px) and (max-width: 1140px) {
+    .card-main-wrapper .product-card {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px !important;
+    flex: 0 0 calc(33.33% - 16px);
+    
+}
+
+.plants-card {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto 210px auto;
+}
+
+
+.plants-card .card-container {
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+.card-container .card-word .card-para {
+    max-width: 100%; 
+    margin: 0px auto;
+}
+
+.card-main-wrapper .product-card .image img {
+    width: 100%;
+}
+
+
+.card-main-wrapper {
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 15px;
+}
+
+.card-container .card-word {
+    margin-bottom: 28px;
+}
+
+.card-mobile-para {
+    font-family: var(--font-family-primary);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-word {
+    padding: 0px 16px;
+
+}
+
+.card-content h3 {
+     font-family: var(--font-family-primary);
+    color: var(--card-primary-title);
+    font-size: 1rem !important;
+    font-weight: 500;
+}
+
+.card-content p {
+
+    font-family: var(--font-family-primary);
+    color: var(--card-primary-title);
+    font-size: 1rem !important;
+    font-weight: bold !important;
+
+}
+
+.product-card button {
+    font-family: var(--font-family-primary);
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+}
+
+}
+
+
+/* Plants Lover Section Starts From Here */
+
+
+.plants-lover {
+    max-width: 1440px;
+    margin: 0 auto 100px auto;
+}
+
+.plants-lover-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+
+}
+
+.plants-bg-image {
+    background-image: url(assets/flower-store.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 540px;
+    position: relative;
+   
+}
+
+.plants-lover-container ul {
+    margin-top: 20px;
+    list-style-position: inside;
+    padding-left: 20px;
+
+}
+
+.plants-lover-container ul li {
+    margin-bottom: 20px;
+
+}
+
+.plants-bg-image img {
+    position: absolute;
+    right: -88px;
+    top: -121px;
+    animation: rotation 5s linear infinite;
+    
+    
+}
+
+@keyframes rotation {
+
+     from {
+        transform: rotate(1deg);
+        
+     }
+     to {
+        transform: rotate(380deg);
+    }
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .plants-lover {
+    margin: 0 auto 50px auto;
+}
+
+
+    .plants-bg-image img {
+    display: none;  
+}
+
+.plants-lover-container {
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.plants-lover-container ul {
+    padding-left: 15px;
+    margin-top: 16px;
+}
+
+.plants-lover .plants-lover-container {
+    padding: 0px 17px;
+
+}
+
+.plants-bg-image {
+    height: 396px;
+   
+}
+
+.plants-lover-container ul li {
+    margin-bottom: 16px;
+
+}
+
+}
+
+/* Latest Deals Css Starts From Here */
+
+.latest-deals {
+    max-width: 1140px;
+    margin: 0px auto 120px auto;
+    height: 100%;
+}
+
+.latest-deals-container {
+    max-width: 1140px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 28px;
+    
+}
+
+.latest-deals-container .flex-first-image {
+    background: url(assets/deal-bloom.png), rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    background-size: cover;
+    width: 366px;
+    height: 200px;
+    margin-bottom: 24px;
+    border-radius: 14px;
+     align-content: center;
+}
+
+.latest-deals-container .flex-second-image {
+    background-blend-mode: multiply;
+    background: url(assets/deal-ana.png), rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    width: 366px;
+    height: 200px;
+    border-radius: 14px;
+     align-content: center;
+}
+
+.deals-2nd-box-images {
+    background-blend-mode: multiply;
+    background: url(assets/deal-zabo.png), rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 424px;
+    border-radius: 14px;
+    align-content: center;
+}
+
+.latest-deals-content {
+    text-align: center;
+    max-width: 888px;
+    margin: 0px auto 100px auto;
+}
+
+.deals-2nd-box-images h2 {
+     font-family: var(--font-family-secondary);
+    color: white;
+    font-size: 3.125rem;
+    font-weight: bold;
+
+}
+
+.deals-2nd-box-images p {
+     font-family: var(--font-family-primary);
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+
+.flex-first-image h2, .flex-second-image h2 {
+    font-family: var(--font-family-secondary);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.flex-first-image p, .flex-second-image p {
+     font-family: var(--font-family-primary);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-top: 19px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .latest-deals {
+        padding: 0px 16px;
+        margin-bottom: 40px;
+    }
+
+    .latest-deals-container {
+    max-width: 1140px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-second-image, .flex-first-image, .deals-2nd-box-images  {
+    width: 100% !important;
+    height: 184px;
+
+}
+
+.flex-second-image, .flex-first-image {
+    margin-bottom: 20px !important;
+}
+
+.latest-wrapper-deals{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.latest-deals-content {
+    text-align: center;
+    max-width: 100%;
+    margin: 0px auto 50px auto;
+}
+
+.deals-2nd-box-images h2 {
+    font-family: var(--font-family-secondary);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.deals-2nd-box-images p {
+     font-family: var(--font-family-primary);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-top: 19px;
+    cursor: pointer;
+}    
+}
+
+/* newsletter Section Starts Designing */
+
+.newsletter {
+    background-image: url(assets/news-letter-bg.png);
+    max-width: 1440px;
+    margin: 0px auto;
+    height: 533px;
+}
+
+.newsletter-signup {
+    text-align: center;
+    max-width: 830px;
+    margin: 0px auto;
+    height: 100%;
+    align-content: center;
+}
+
+.newsletter-signup h2 {
+    color: white;
+}
+.newsletter-signup .newsletter-form {
+    width: 100%;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.blank-newsletter {
+    height: 50px;
+    width: 70%;
+    outline: none;
+    border: none;
+    font-family: var(--font-family-primary);
+    font-size: 1rem;
+    padding-left: 20px;
+}
+
+.newsletter-button {
+    width: 25%;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--button-bg);
+    outline: none;
+    border: none;font-family: var(--font-family-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* newsletter responsive from here */
+
+@media screen and (max-width: 570px) {
+   .newsletter {
+    height: 275px;
+    width: 100%;
+   } 
+   
+   .newsletter-form {
+    width: 100%;
+    padding: 0px 36px;
+   }
+
+   .news-title {
+    font-size: 1.25rem;
+   }
+}
+
+
+/* footer work starts from here */
+
+.footer-container {
+    max-width: 1440px;
+    margin: 0px auto;
+    height: 348px;
+}
+
+.inside-footer-container {
+    max-width: 1140px;
+    margin: 0px auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+.fot-con {
+    width: 359px;
+}
+
+.inside-footer-container ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+ 
+}
+
+.center-class {
+    height: 248px;
+}
+
+.footer-icon img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    column-gap: 20px;
+}
+
+
+
+
