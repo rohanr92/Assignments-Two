@@ -38,6 +38,10 @@
 
 /* Shared Style Part */
 
+.text-orange {
+    color: var(--secondary-color);
+}
+
 .display-flex {
     display: flex;
 }
