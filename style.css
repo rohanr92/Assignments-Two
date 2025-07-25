@@ -969,6 +969,9 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    color: var(--nav-primary-color);
+    font-weight: 400;
+    font-size: 1rem;
 
 }
 
@@ -992,11 +995,20 @@
 @media screen and (max-width: 576px) {
     .footer-container {
         padding: 50px 16px;
+        height: 100%;
     }
     .inside-footer-container {
     flex-direction: column;
     align-items: start;
-    row-gap: 28px;
+}
+
+.fot-con {
+    height: 100%;
+}
+
+.footer-icon {
+    height: 100%;
+    margin-bottom: 28px;
 }
     }
 
